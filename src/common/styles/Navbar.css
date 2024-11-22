@@ -1,0 +1,66 @@
+.navbar {
+  font-family: "poppins", sans-serif;
+}
+.nav-link,.navbar-brand {
+    position: relative;  
+    color: #fdf7f7;  
+    transition: color 0.3s ease; 
+    margin: 0px 15px;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 5px; 
+    height: 2px; 
+    background-color: hsl(293, 100%, 50%); 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+  }
+  
+  .nav-link:hover {
+    color: hsl(293, 100%, 50%); /* Color on hover */
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+  }
+  
+
+
+.navbar .mx-auto {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .button {
+  background-image: radial-gradient(
+    at top left,
+    hsl(271, 100%, 50%) 35%,
+    /* Bright red */ hsl(293, 100%, 50%) 100% /* Dark green */
+  );
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  transition: background 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+  background-image: radial-gradient(
+    at top left,
+    hsl(271, 100%, 60%) 35%,
+    hsl(293, 60%, 40%) 100%
+  );
+  opacity: 0.9; /* Slightly darker on hover */
+}
+
+@media (min-width: 1024px) {
+  .navbar .container {
+    margin: 0px 180px !important    ;
+    padding: 15px 0px !important ;
+  }
+  
+}
