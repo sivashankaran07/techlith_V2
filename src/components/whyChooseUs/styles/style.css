@@ -1,0 +1,108 @@
+.why-choose-us {
+    
+    padding: 70px 0;
+}
+.why-choose-us-item {
+    background-color: #fdfdff;
+    border-radius: 40px;
+    padding: 40px;
+    height: calc(100% - 30px);
+    margin-bottom: 30px;
+    color: #000;
+}
+.section-row {
+    margin-bottom: 60px;
+}
+.why-choose-us-item h3 {
+    font-size: 26px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.why-choose-us-item p {
+    margin: 0;
+}
+.why-choose-us-item .icon-box {
+    margin-bottom: 30px;
+}
+.section-title {
+    text-align: left;
+}
+.why-us-explore-item {
+    position: relative;
+    background-color: #fdfdff;
+    border-radius: 40px;
+    padding: 70px;
+    color: #000;
+}
+
+.why-us-explore-item .section-title {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+.explore-item-icon {
+    position: absolute;
+    top: 70px;
+    right: 70px;
+}
+.explore-item-tags ul li .wuc-btn-default {
+    background-color: hsl(293 ,100%,50%);
+    color: var(--primary-color);
+    border: none;
+}
+.wuc-btn-default {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.1em;
+    color: #fff;
+    background: var(--accent-color);
+    text-transform: capitalize;
+    padding: 15px 45px 15px 20px;
+    border: 2px solid var(--accent-color);
+    border-radius: 100px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.explore-item-tags {
+    text-align: end;
+}
+.explore-item-tags ul li .wuc-btn-default {
+    background-color:hsl(0, 0%, 56%);
+    color: #000;
+    border: none;
+    text-decoration: none !important;
+
+}
+.explore-item-tags ul li .wuc-btn-default:hover{
+    background-color:hsl(293, 100%, 56%);
+    color: #fff;
+    border: none;
+    text-decoration: none !important;
+
+}
+.explore-item-tags ul li .wuc-btn-default:hover svg{
+    transform: rotate(45deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.section-title h1, .section-title h2 {
+    font-size: 70px;        
+    letter-spacing: -0.05em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.explore-item-tags ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.explore-item-tags ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+

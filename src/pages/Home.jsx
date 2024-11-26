@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../assets/styles/Home.css";
 import homeInfo from "../components/data/homePage";
-import About from "../components/about/about"; 
-import Services from "../components/services/service"; 
- import { Helmet } from "react-helmet-async";
- import SEO from "../components/data/seo";
+import About from "../components/about/about";
+import WCU from "../components/whyChooseUs/whyChooseUs";
+import Services from "../components/services/service";
+import { Helmet } from "react-helmet-async";
+import SEO from "../components/data/seo";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Images from "../components//data/Images";
 
 const Home = () => {
-  const currentSeo = SEO.find((item) => item.page.toLowerCase() === "home") || {};
+  const currentSeo =
+    SEO.find((item) => item.page.toLowerCase() === "home") || {};
   return (
     <>
       <Helmet>
@@ -31,7 +35,7 @@ const Home = () => {
                 sm={12}
                 className="HeroContent"
                 data-aos=""
-                data-aos-duration="1000"  
+                data-aos-duration="1000"
               >
                 <h1>{homeInfo.homepage.title}</h1>
                 <p>{homeInfo.homepage.description}</p>
@@ -43,14 +47,32 @@ const Home = () => {
                   >
                     {homeInfo.homepage.button}
                   </a>
-                </button>               
+                </button>
               </Col>
             </div>
           </Col>
         </Row>
         <About />
-        <Services />
       </Container>
+
+      <section
+        style={{
+          background: "#1e1e1e",
+        }}
+      >
+        <Container>
+          <Row>
+            <Services />
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <Row>
+            <WCU />
+          </Row>
+        </Container>
+      </section>
     </>
   );
 };

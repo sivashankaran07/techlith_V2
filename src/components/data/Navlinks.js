@@ -4,12 +4,17 @@ const navLinks = [
     {
       name: 'Services',
       dropdown: [
-        { name: 'Action', href: '#action3' },
-        { name: 'Another action', href: '#action4' },
+        { name: 'Website Development', href: '/webDevlopment' },
+        { name: 'Web Design', href: '/webDesign' },
+        { name: 'Graphic Design', href: '/graphicDesign' },
+        { name: 'Digital Marketing', href: '/digitalMarketing' },
+        { name: 'Logo Design', href: '/logoDesign' },
+        { name: 'UI/UX Design', href: '/uiDesign' },
       ],
     },
-    { name: 'Blog', href: '#blog' },
-    { name: 'Contact Us', href: '#contact' },
+    { name: 'Portfolio', href: '/Portfolio' },
+    { name: 'Blog', href: '/Blog' },
+    { name: 'Contact Us', href: '/Contact' },
   ];
   
   export default navLinks;

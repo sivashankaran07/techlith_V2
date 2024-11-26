@@ -1,38 +1,43 @@
 .navbar {
   font-family: "poppins", sans-serif;
 }
-.nav-link,.navbar-brand {
-    position: relative;  
-    color: #fdf7f7;  
-    transition: color 0.3s ease; 
-    margin: 0px 15px;
-  }
-  
-  .nav-link::after {
-    content: "";
-    position: absolute; 
-    left: 0; 
-    right: 0; 
-    bottom: 5px; 
-    height: 2px; 
-    background-color: hsl(293, 100%, 50%); 
-    transform: scaleX(0); 
-    transition: transform 0.3s ease; 
-  }
-  
-  .nav-link:hover {
-    color: hsl(293, 100%, 50%); /* Color on hover */
-  }
-  
-  .nav-link:hover::after {
-    transform: scaleX(1); /* Scale to full width on hover */
-  }
-  
+.nav-link,
+.navbar-brand {
+  position: relative;
+  color: #fdf7f7;
+  transition: color 0.3s ease;
+  margin: 0px 15px;
+}
 
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 2px;
+  background-color: hsl(293, 100%, 50%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: hsl(293, 100%, 50%); /* Color on hover */
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1); /* Scale to full width on hover */
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+  background-color: black;
+}
 
 .navbar .mx-auto {
   display: flex;
   justify-content: center;
+}
+.dropdown-item{
+  width: max-content;
 }
 
 .navbar .button {
@@ -57,10 +62,19 @@
   opacity: 0.9; /* Slightly darker on hover */
 }
 
+.services-default {
+  color: #f6eeee;
+  cursor: pointer;
+}
+
+.services-active {
+  color: hsl(293, 100%, 50%);
+  cursor: pointer;
+}
+
 @media (min-width: 1024px) {
   .navbar .container {
     margin: 0px 180px !important    ;
     padding: 15px 0px !important ;
   }
-  
 }

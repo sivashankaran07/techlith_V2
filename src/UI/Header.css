@@ -1,0 +1,48 @@
+.page-header::before {
+  content: "";
+  position: absolute;
+  background-image: url(../assets/img/page-header-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.page-header {
+  position: relative;
+  background: hsl(230deg 60% 98.04%);
+  padding: 180px 0;
+  color: #000;
+}
+.page-header-box {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+
+
+}
+.page-header-box h1 {
+  font-size: 70px;
+  letter-spacing: -0.05em;
+  margin-bottom: 20px;
+}
+.page-header-box ol {
+  display: inline-flex;
+  margin-bottom: 0;
+  justify-content: center;
+  border: 2px solid hsl(290, 70%, 62%);
+  border-radius: 100px;
+  padding: 6px 20px;
+}
+.page-header-box ol li.breadcrumb-item {
+  color: hsl(283, 93%, 27%);
+  text-transform: capitalize;
+}
+.page-header-box ol .breadcrumb-item + .breadcrumb-item::before {
+  color: #000;
+}
+.breadcrumb-item a{
+    color: hsl(283, 93%, 27%);
+    text-decoration: none;
+}

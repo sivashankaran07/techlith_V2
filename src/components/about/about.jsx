@@ -12,39 +12,60 @@ const About = () => {
   useEffect(() => {
     AOS.init();
   }, []);
-  const currentSeo = SEO.find((item) => item.page.toLowerCase() === "about") || {};
+  const currentSeo =
+    SEO.find((item) => item.page.toLowerCase() === "about") || {};
 
   return (
-    <div className="about-section">
-    
-
-      <Row>
-        <Col xl={8}>
-          <p style={{ color: "hsl(293, 60%, 40%)" }}>{homeInfo.about.lable}</p>
-          <h1 className="fw-bold mb-4" style={{ fontSize: "53px" }}>
-            {homeInfo.about.title}
-          </h1>
-        </Col>
-        <Col xl={6}>
-          <div className="about-image">
-            <div className="about-img">
-              <figure
-                className="image-anime reveal"
-                style={{
-                  transform: "translate(0px, 0px)",
-                  opacity: "1",
-                  visibility: "inherit",
-                }}
-              >
-                <img
-                  src={Images.aboutImg}
-                  alt="aboutimg"
-                  style={{ transform: "translate(0px, 0px)" }}
-                />
-              </figure>
+    <>
+      <div className="about-section">
+        <Row>
+          <Col xl={8}>
+            <p
+              style={{ color: "hsl(293, 60%, 40%)" }}
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+              data-aos-offset="50"
+            >
+              {homeInfo.about.lable}
+            </p>
+            <h1
+              className="fw-bold mb-4"
+              style={{ fontSize: "53px" }}
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              data-aos-offset="50"
+            >
+              {homeInfo.about.title}
+            </h1>
+          </Col>
+          <Col xl={6}>
+            <div
+              className="about-image"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              data-aos-offset="50"
+            >
+              <div className="about-img">
+                <figure
+                  className="image-anime reveal"
+                  style={{
+                    transform: "translate(0px, 0px)",
+                    opacity: "1",
+                    visibility: "inherit",
+                  }}
+                >
+                  <img
+                    src={Images.aboutImg}
+                    alt="aboutimg"
+                    style={{ transform: "translate(0px, 0px)" }}
+                  />
+                </figure>
+              </div>
             </div>
-          </div>
-          {/* <div className="about-consultation">
+            {/* <div className="about-consultation">
             <figure>
               <img
                 src={Images.aboutCircle}
@@ -53,55 +74,58 @@ const About = () => {
               />
             </figure>
           </div> */}
-        </Col>
-        <Col xl={6}>
-          <div className="about-content d-flex flex-column align-items-center justify-content-center ">
-            <p
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-              data-aos-offset="50"
-            >
-              {homeInfo.about.description1}
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="300"
-              data-aos-offset="50"
-            >
-              {homeInfo.about.description2}
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="400"
-              data-aos-offset="50"
-            >
-              {homeInfo.about.description3}
-            </p>
+          </Col>
+          <Col xl={6}>
+            <div className="about-content d-flex flex-column align-items-center justify-content-center ">
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-offset="50"
+              >
+                {homeInfo.about.description1}
+              </p>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-aos-offset="50"
+              >
+                {homeInfo.about.description2}
+              </p>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-aos-offset="50"
+              >
+                {homeInfo.about.description3}
+              </p>
 
-            <ul
+              <ul
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+                data-aos-offset="50"
+              >
+                {homeInfo.about.content.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <button
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="500"
               data-aos-offset="50"
             >
-              {homeInfo.about.content.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </div>
-          <button data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="600"
-              data-aos-offset="50">
-            <a href="">Read More</a>
-          </button>
-        </Col>
-      </Row>
-    </div>
+              <a href="">Read More</a>
+            </button>
+          </Col>
+        </Row>
+      </div>
+    </>
   );
-};    
+};
 
 export default About;
