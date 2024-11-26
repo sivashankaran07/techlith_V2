@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../assets/styles/Home.css";
 import homeInfo from "../components/data/homePage";
 import About from "../components/about/about"; 
+import Services from "../components/services/service"; 
  import { Helmet } from "react-helmet-async";
  import SEO from "../components/data/seo";
 
@@ -29,7 +30,7 @@ const Home = () => {
                 xl={6}
                 sm={12}
                 className="HeroContent"
-                data-aos="fade-in"
+                data-aos=""
                 data-aos-duration="1000"  
               >
                 <h1>{homeInfo.homepage.title}</h1>
@@ -48,6 +49,7 @@ const Home = () => {
           </Col>
         </Row>
         <About />
+        <Services />
       </Container>
     </>
   );

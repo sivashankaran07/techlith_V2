@@ -92,10 +92,16 @@ const About = () => {
               ))}
             </ul>
           </div>
+          <button data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+              data-aos-offset="50">
+            <a href="">Read More</a>
+          </button>
         </Col>
       </Row>
     </div>
   );
-};
+};    
 
 export default About;
