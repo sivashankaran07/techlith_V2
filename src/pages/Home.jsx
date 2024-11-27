@@ -9,10 +9,11 @@ import { Helmet } from "react-helmet-async";
 import SEO from "../components/data/seo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Images from "../components//data/Images";
+import MarqueeEffect from "../UI/effects/Marquee";
 
 const Home = () => {
   const currentSeo =
-    SEO.find((item) => item.page.toLowerCase() === "home") || {};
+    SEO.find((item) => item.page.toLowerCase() === "home") || {};  
   return (
     <>
       <Helmet>
@@ -54,6 +55,7 @@ const Home = () => {
         </Row>
         <About />
       </Container>
+      <MarqueeEffect />
 
       <section
         style={{
@@ -62,7 +64,7 @@ const Home = () => {
       >
         <Container>
           <Row>
-            <Services />
+            <Services isVisible={isServiceVisible} />
           </Row>
         </Container>
       </section>

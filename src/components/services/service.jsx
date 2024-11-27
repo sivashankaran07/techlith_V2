@@ -6,7 +6,7 @@ import Images from "../data/Images";
 const Service = () => {
   return (
     <>
-      <div className="our-services">
+      <div className="our-services" >
         <div className="container">
           <div className="row section-row align-items-center">
             <div className="col-lg-7 col-md-7">

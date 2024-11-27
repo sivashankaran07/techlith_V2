@@ -25,10 +25,10 @@ const AboutPage = () => {
           content={currentSeo.keywords?.join(", ") || "Default keywords"}
         />
       </Helmet>
-      <section style={{background:"hsl(230deg 60% 98.04%)"}}>
+      <section style={{ background: "hsl(230deg 60% 98.04%)" }}>
         <Header />
       </section>
-    
+
       <Container>
         <About />
       </Container>

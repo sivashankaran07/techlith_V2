@@ -6,6 +6,7 @@ import Images from "../data/Images";
 import { Container, Row, Col } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 
 const About = () => {
@@ -113,14 +114,18 @@ const About = () => {
                 ))}
               </ul>
             </div>
-            <button
+
+            <motion.button
+              className="button"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="500"
               data-aos-offset="50"
             >
               <a href="">Read More</a>
-            </button>
+            </motion.button>
           </Col>
         </Row>
       </div>

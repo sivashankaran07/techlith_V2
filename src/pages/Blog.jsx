@@ -18,6 +18,8 @@ return (
         name="description"
         content={currentSeo.description }
       />
+      
+
   
       <meta
         name="keywords"

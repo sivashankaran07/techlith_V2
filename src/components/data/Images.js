@@ -11,6 +11,8 @@ import innovation from "../../assets/img/wcu/innovation.svg";
 import qualityFocused from "../../assets/img/wcu/qualityFocused.svg";
 import valueMoney from "../../assets/img/wcu/valueMoney.svg";
 import globe from "../../assets/img/wcu/globe.svg";
+import logo from "../../assets/img/Hero/logo.png";
+import preLoader from '/preloader.png'
 
 const Images = {
   aboutImg,
@@ -26,6 +28,8 @@ const Images = {
   qualityFocused,
   valueMoney,
   globe,
+  logo,
+  preLoader,
 };
 
 export default Images;
